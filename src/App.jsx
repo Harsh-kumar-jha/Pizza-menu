@@ -4,11 +4,11 @@ import Menu from "./Menu";
 
 const App = () => {
   return (
-    <>
+    <div className="container header">
       <Header />
       <Menu />
       <Footer />
-    </>
+    </div>
   );
 };
 

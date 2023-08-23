@@ -6,7 +6,7 @@ const Footer = () => {
   const closingTime = 22;
   const isOpen = openingTime <= hour && hour <= closingTime;
   return (
-    <footer>
+    <footer className="footer">
       {isOpen ? (
         <>{new Date().toLocaleTimeString()}. We are currently Open....</>
       ) : (
