@@ -1,13 +1,13 @@
 const Pizza = ({ name, ingredients, photoName, price, soldOut }) => {
   return (
-    <div className="pizza pizzas">
+    <li className={`pizza ${soldOut ? "sold-out" : ""}`}>
       <img src={photoName} alt={name} />
       <div>
         <h3>{name}</h3>
         <p>{ingredients}</p>
-        <span>Rs. {price * 83}</span>
+        <span>{soldOut ? "Sold Out" : "Rs." + price * 83}</span>
       </div>
-    </div>
+    </li>
   );
 };
 
